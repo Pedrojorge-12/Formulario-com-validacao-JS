@@ -6,7 +6,7 @@
 
 html, body {
   margin: 0;
-  overflow-x: hidden;            /* remove a barrinha horizontal */
+  overflow-x: hidden;            
   background: #f7f9fb;
   font-family: 'Poppins', sans-serif;
 }
@@ -49,7 +49,6 @@ html, body {
   margin: 0;
 }
 
-/* ===== Área central / espaçamento para não ficar sob a topbar ===== */
 .wrapper {
   max-width: 960px;               
   margin: 0 auto;
@@ -71,7 +70,6 @@ html, body {
   overflow: hidden;
 }
 
-/* Camada escura de sobreposição para contraste */
 .sobre-m1 .overlay {
   position: absolute;
   top: 0; left: 0;
@@ -80,7 +78,7 @@ html, body {
   backdrop-filter: blur(2px);
 }
 
-/* Conteúdo centralizado */
+
 .sobre-m1 .content {
   position: relative;
   color: #fff;
@@ -91,20 +89,19 @@ html, body {
 }
 
 
-/* Texto */
 .sobre-m1 p {
   font-size: 1.1rem;
   line-height: 1.6;
 }
 
-/* Destaques */
+
 .sobre-m1 .highlight {
   color: #00ffc3;
   font-weight: 700;
   position: relative;
 }
 
-/* Efeito de brilho animado */
+/* ===== Efeito de brilho ===== */
 .sobre-m1 .highlight::after {
   content: "";
   position: absolute;
@@ -122,7 +119,6 @@ html, body {
 }
 
 
-/* ===== Bloco "formulario Menos1" centralizado ===== */
 .hero {
   text-align: center;             
   background: #ffffff;
@@ -144,7 +140,7 @@ html, body {
   margin: 6px 0 12px;
 }
 
-/* ===== Form padrão (mantém seu grid) ===== */
+
 form {
   background: #fff;
   border: 1px solid #e6eaee;
@@ -155,7 +151,7 @@ form {
   box-shadow: 0 8px 24px rgba(0,0,0,.06);
 }
 
-/* inputs e fieldsets básicos (caso não tenha) */
+
 input[type="text"],
 input[type="email"],
 input[type="tel"],
@@ -194,7 +190,7 @@ button[type="submit"] {
 }
 button[type="submit"]:hover { filter: brightness(.95); }
 
-/* ===== Responsivo ===== */
+
 @media (max-width: 480px) {
   .topbar .brand h1 { font-size: 1.05rem; }
   .topbar .brand img { height: 30px; }
