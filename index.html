@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Formulario com Validação JavaScript</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="scripts.js" defer></script>
+</head>
+<body>
+  <!-- Topbar fixa -->
+  <header class="topbar" role="banner">
+    <div class="brand">
+      <img src="img/Menos1 Logo.png" alt="Logo Menos1" />
+      <h1>Menos1</h1>
+      
+    </div>
+  </header>
+
+  <section class="sobre-m1">
+    <div class="overlay"></div>
+    <div class="content">
+      <h2>Sobre a <span class="m1-highlight">Menos1 (M1)</span></h2>
+      <p>
+        A <strong>Menos1</strong> é uma empresa especializada em
+        <span class="highlight">automação inteligente de atendimento</span>,
+        desenvolvendo soluções baseadas em
+        <span class="highlight">inteligência artificial</span> que transformam a
+        experiência de comunicação entre empresas e clientes. <br><br>
+        Nosso propósito é tornar cada interação mais
+        <strong>ágil</strong>, <strong>humana</strong> e <strong>eficiente</strong>,
+        otimizando processos, reduzindo o tempo de resposta e ampliando o potencial de
+        conversão. <br><br>
+        Com a M1, você ganha tempo, consistência e inovação para focar no que realmente
+        importa: <span class="highlight">o crescimento sustentável do seu negócio</span>.
+      </p>
+    </div>
+  </section>
+
+  <!-- Área central da página -->
+  <main class="wrapper">
+    <section class="hero">
+      <h2>Formulário de Interesse em Atendente Virtual M1</h2>
+      <p>
+        Preencha o formulário abaixo para que possamos entender melhor o seu negócio e propor
+        a melhor solução de automação com IA para a sua empresa. As informações fornecidas ajudarão
+        nossa equipe a personalizar o atendente virtual ideal para suas necessidades.
+      </p>
+    </section><br>
+
+    <!-- formulário -->
+    <form id="form" novalidate>
+      <label for="solicitante">Nome completo do solicitante:</label>
+      <input type="text" id="solicitante" name="solicitante" autocomplete="name">
+
+      <label for="empresa">Empresa ou marca:</label>
+      <input type="text" id="empresa" name="empresa" autocomplete="organization">
+
+      <label for="cargo">Cargo / função:</label>
+      <input type="text" id="cargo" name="cargo">
+
+      <label for="email">E-mail:</label>
+      <input type="email" id="email" name="email" autocomplete="email">
+
+      <label for="telefone">Telefone / WhatsApp:</label>
+      <input type="tel" id="telefone" name="telefone" placeholder="(xx) xxxxx-xxxx">
+
+      <label for="segmento">Segmento de atuação da empresa:</label>
+      <input type="text" id="segmento" name="segmento">
+
+      <fieldset class="origem">
+        <legend>Canais de atendimento atuais:</legend>
+        <label><input type="checkbox" name="canais" value="whatsapp"> WhatsApp</label>
+        <label><input type="checkbox" name="canais" value="instagram"> Instagram</label>
+        <label><input type="checkbox" name="canais" value="site"> Site</label>
+        <label><input type="checkbox" name="canais" value="outro"> Outro</label>
+      </fieldset>
+
+      <label for="dificuldades">Principais dificuldades no atendimento atual:</label>
+      <input type="text" id="dificuldades" name="dificuldades">
+
+      <label for="objetivo">Objetivo com a automação da M1:</label>
+      <input type="text" id="objetivo" name="objetivo">
+
+      <fieldset class="origem">
+        <legend>Como conheceu a Menos1?</legend>
+        <label><input type="checkbox" name="origem" value="indicacao"> Indicação</label>
+        <label><input type="checkbox" name="origem" value="instagram"> Instagram</label>
+        <label><input type="checkbox" name="origem" value="outro"> Outro</label>
+      </fieldset>
+
+      <fieldset class="demo">
+        <legend>Deseja uma demonstração gratuita?</legend>
+        <label><input type="radio" name="demo" value="sim" required> Sim</label>
+        <label><input type="radio" name="demo" value="nao"> Não</label>
+      </fieldset>
+
+      <label for="data">Data para contato / demonstração:</label>
+      <input type="date" id="data" name="data">
+
+      <label for="janela">Janela de horário preferida:</label>
+      <select name="janela" id="janela" required>
+        <option value="" disabled selected>Selecione...</option>
+        <option value="manha">manhã</option>
+        <option value="tarde">tarde</option>
+        <option value="noite">noite</option>
+      </select>
+
+      <label for="mensagem">Mensagem adicional / descrição do projeto</label>
+      <textarea name="mensagem" id="mensagem" rows="4"></textarea>
+
+      <button type="submit">Enviar</button>
+    </form>
+  </main> 
+
+  <footer>
+    © 2025 Menos1 <br> Todos os direitos reservados.
+  </footer>
+</body>
+</html>
